@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #ef5350;
+  --background-color: #f5f5f5;
+  --card-background: #ffffff;
+  --text-color: #333333;
+}
+
+.pokemon-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.search-container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.pokemon-card {
+  background: var(--card-background);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
+
+.pokemon-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: #f0f0f0;
+  padding: 1rem;
+}
+
+.pokemon-info {
+  padding: 1rem;
+}
+
+.pokemon-name {
+  margin: 0;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.pokemon-types {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.type-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* Pokemon type colors */
+.normal { background-color: #A8A878; }
+.fire { background-color: #F08030; }
+.water { background-color: #6890F0; }
+.electric { background-color: #F8D030; }
+.grass { background-color: #78C850; }
+.ice { background-color: #98D8D8; }
+.fighting { background-color: #C03028; }
+.poison { background-color: #A040A0; }
+.ground { background-color: #E0C068; }
+.flying { background-color: #A890F0; }
+.psychic { background-color: #F85888; }
+.bug { background-color: #A8B820; }
+.rock { background-color: #B8A038; }
+.ghost { background-color: #705898; }
+.dragon { background-color: #7038F8; }
+.dark { background-color: #705848; }
+.steel { background-color: #B8B8D0; }
+.fairy { background-color: #EE99AC; }
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
